@@ -4037,7 +4037,7 @@ local function NewTextureOption(parent,o,s,d)
 end
 
 local function NewScrollFrame(parent)
-	local obj = CreateFrame("ScrollFrame",nil,parent);
+	local obj = CreateFrame("ScrollFrame",nil,parent, "BackdropTemplate");
 	obj.parent = parent;
 	obj:SetWidth(560);
 	obj:SetHeight(460);
