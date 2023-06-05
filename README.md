@@ -9,8 +9,8 @@ This is an attempt at restoring functionality to the ForteXorcist addon that is 
 
 ## Addon Installation
 1. View the latest [Releases](https://github.com/fstubner/ForteXorcist/releases/latest)
-2. Download the `ForteXorcist.zip` file.
-3. Once download, extract the contents into your World of Warcraft Addons directory (e.g. `C:\Program Files (x86)\World of Warcraft\_retail_\Interface\AddOns\`).
+2. Download the `ForteXorcist.zip` file
+3. Once download, extract the contents into your World of Warcraft Addons directory (e.g. `C:\Program Files (x86)\World of Warcraft\_retail_\Interface\AddOns\`)
 
 ## Addon Development
 1. Clone this repository
