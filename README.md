@@ -16,7 +16,5 @@ This is an attempt at restoring functionality to the ForteXorcist addon that is 
 1. Clone this repository
 2. Make any code changes
 3. Run [deploy_addon.sh](./deploy_addon.sh) and wait for it to complete
-    {% note %}
-    **Note:** You may be prompted to provide the World of Warcraft installation directory path when using the script for the first time.
-    {% endnote %}
+    > **Note:** You may be prompted to provide the World of Warcraft installation directory path when using the script for the first time.
 4. Type `/reload` in-game to load the updated addon code
