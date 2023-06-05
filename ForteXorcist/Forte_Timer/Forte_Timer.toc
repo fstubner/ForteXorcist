@@ -8,4 +8,4 @@
 
 Localization.lua
 Forte_Timer.lua
-Register.lua
+# Register.lua

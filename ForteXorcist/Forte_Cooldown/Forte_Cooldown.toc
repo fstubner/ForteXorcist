@@ -8,4 +8,4 @@
 
 Localization.lua
 Forte_Cooldown.lua
-Register.lua
+# Register.lua
