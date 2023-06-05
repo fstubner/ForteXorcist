@@ -86,7 +86,7 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 		</Scripts>
 	</Button>
 	
-	<Frame name="FWSUFrame" movable="true" toplevel="true" parent="UIParent" hidden="true">
+	<Frame name="FWSUFrame" movable="true" toplevel="true" parent="UIParent" hidden="true" inherits="BackdropTemplate">
 		<Size>
 			<AbsDimension x="106" y="20" />
 		</Size>
@@ -160,7 +160,7 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 			</OnLoad>
 		</Scripts> 
 	</Frame>
-	<Frame name="FWSUBackground" parent="UIParent" hidden="true">
+	<Frame name="FWSUBackground" parent="UIParent" hidden="true" inherits="BackdropTemplate">
 		<Size>
 			<AbsDimension x="106" y="20" />
 		</Size>

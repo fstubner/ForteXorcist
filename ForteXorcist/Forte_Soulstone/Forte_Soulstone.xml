@@ -199,7 +199,7 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 			</OnLoad>
 		</Scripts> 
 	</Frame>
-	<Frame name="FWSSBackground" parent="UIParent" hidden="false">
+	<Frame name="FWSSBackground" parent="UIParent" hidden="false" inherits="BackdropTemplate">
 		<Size>
 			<AbsDimension x="106" y="20" />
 		</Size>

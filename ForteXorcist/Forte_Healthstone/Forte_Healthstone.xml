@@ -206,7 +206,7 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 			</OnMouseDown>
 		</Scripts> 
 	</Frame>
-	<Frame name="FWHSBackground" parent="UIParent" hidden="false">
+	<Frame name="FWHSBackground" parent="UIParent" hidden="false" inherits="BackdropTemplate">
 		<Size>
 			<AbsDimension x="106" y="20" />
 		</Size>

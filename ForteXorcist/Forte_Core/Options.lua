@@ -1526,7 +1526,7 @@ local function NewTextureButton(parent,n)
 end
 
 local function NewBackdropButton(parent,n)
-	local obj = CreateFrame("Button",nil,parent);
+	local obj = CreateFrame("Button",nil,parent,"BackdropTemplate");
 	obj.parent = parent;
 	obj.parent.items[n] = obj;
 	obj:SetWidth(140);
@@ -1647,7 +1647,7 @@ local function NewSoundButton(parent,n)
 end
 
 local function NewDropdown(parent,build)
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	obj.parent = parent;
 	obj:SetWidth(110);
 	obj:SetHeight(20);
@@ -1832,7 +1832,7 @@ local function NewLinker(parent)
 end
 
 local function NewOption(parent,o,s,d) -- create a default option frame
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	obj.o = o;
 	obj.s = s or FW.Settings;
 	obj.d = d or FW.Default;

@@ -2230,7 +2230,6 @@ function FW:SetBackdrop(frame,bg,edge,tile,tilesize,edgesize)
         frame.backdrop = CreateFrame("Frame", nil, frame, "BackdropTemplate") 
     end
     FW:MakeBackdrop(frame.backdrop,bg,edge,tile,tilesize,edgesize);
-    -- frame:SetBackdrop(frame.backdrop); -- remove this line
 end
 
 ---------------------------------------------------------------------------

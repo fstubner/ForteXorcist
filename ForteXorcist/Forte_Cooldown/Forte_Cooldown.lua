@@ -1204,7 +1204,7 @@ end
 
 local tags = {};
 local function CD_NewCooldownFrame(index)
-	local frame = CreateFrame("Frame",nil,UIParent);
+	local frame = CreateFrame("Frame",nil,UIParent, "BackdropTemplate");
 	frame.parent = UIParent;
 	frame.index = index;
 	---frame.displayname = displayname;
