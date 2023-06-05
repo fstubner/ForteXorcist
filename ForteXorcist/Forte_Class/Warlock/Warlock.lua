@@ -121,7 +121,7 @@ if FW.CLASS == "WARLOCK" then
 	local t1,t2,t3,t4,t5,t6;
 	local BP = {};
 	
-	local bp = FW:SpellName(6307);
+	local bp = 6307;
 	
 	local function WL_ScanBloodpact(unit)
 		local unitClass = select(2,UnitClass(unit));

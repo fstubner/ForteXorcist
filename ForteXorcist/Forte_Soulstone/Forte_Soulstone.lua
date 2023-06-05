@@ -324,9 +324,9 @@ local function SS_ProcessSoulstone()
 	end
 end
 
-local buffss = FW:SpellName(20707);
-local divint = FW:SpellName(114153); -- MOP
-local spirit = FW:SpellName(20711);
+local buffss = 20707;
+local divint = 19752;
+local spirit = 20711;
 
 local function SS_IsFresh(t,d)
 	return t >= d - 10;
