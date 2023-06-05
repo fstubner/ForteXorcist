@@ -75,6 +75,15 @@ local function SS_SoulstoneShow(self,auto) -- with auto set, will only refresh t
 			end
 			FWSSBackground:SetAlpha(FW.Settings.FWSSFrame.alpha);
 			FWSSFrame:SetAlpha(FW.Settings.FWSSFrame.alpha);
+
+			FWHSBackground:SetBackdrop({
+				bgFile = "Interface\\AddOns\\Forte_Core\\Textures\\Background",
+				edgeFile = "Interface\\AddOns\\Forte_Core\\Textures\\Border",
+				tile = true,
+				tileSize = 5,
+				edgeSize = 5,
+				insets = { left = 5, right = 5, top = 5, bottom = 5 }
+			})
 			
 			FWSSBackground:SetBackdropColor(unpack(FW.Settings.SoulstoneBgColor));
 			FWSSBackground:SetBackdropBorderColor(unpack(FW.Settings.SoulstoneBgColor));
