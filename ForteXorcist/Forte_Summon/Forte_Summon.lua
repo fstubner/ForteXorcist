@@ -66,6 +66,15 @@ local function SU_SummonShow(self,hide) -- with hide set, will force the frame t
 		
 		FWSUFrame:SetFrameStrata(FW.Settings.SummonStrata);
 		FWSUBackground:SetFrameStrata(FW.Settings.SummonStrata);
+
+		FWHSBackground:SetBackdrop({
+			bgFile = "Interface\\AddOns\\Forte_Core\\Textures\\Background",
+			edgeFile = "Interface\\AddOns\\Forte_Core\\Textures\\Border",
+			tile = true,
+			tileSize = 5,
+			edgeSize = 5,
+			insets = { left = 5, right = 5, top = 5, bottom = 5 }
+		})
 		
 		FWSUBackground:SetBackdropColor(unpack(FW.Settings.SummonBgColor));
 		FWSUBackground:SetBackdropBorderColor(unpack(FW.Settings.SummonBgColor));

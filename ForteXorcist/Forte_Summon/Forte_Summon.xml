@@ -180,11 +180,5 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 			<Button name="FWSUBar9" inherits="FWSUBarTemplate SecureActionButtonTemplate"/>
 			<Button name="FWSUBar10" inherits="FWSUBarTemplate SecureActionButtonTemplate"/>
 		</Frames>
-		<Backdrop bgFile="Interface\AddOns\Forte_Core\Textures\Background" edgeFile="Interface\AddOns\Forte_Core\Textures\Border" tile="true">
-			<EdgeSize><AbsValue val="5"/></EdgeSize>
-			<TileSize><AbsValue val="5"/></TileSize>
-			<BackgroundInsets><AbsInset left="5" right="5" top="5" bottom="5"/></BackgroundInsets>
-		</Backdrop>
 	</Frame>
-
 </Ui>
