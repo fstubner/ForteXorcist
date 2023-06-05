@@ -43,7 +43,15 @@ local function HS_HealthstoneShow(self,auto)
 			FWHSFrame:SetAlpha(FW.Settings.FWHSFrame.alpha);
 			FWHSBackground:SetAlpha(FW.Settings.FWHSFrame.alpha);
 			
-
+			FWHSBackground:SetBackdrop({
+				bgFile = "Interface\\AddOns\\Forte_Core\\Textures\\Background",
+				edgeFile = "Interface\\AddOns\\Forte_Core\\Textures\\Border",
+				tile = true,
+				tileSize = 5,
+				edgeSize = 5,
+				insets = { left = 5, right = 5, top = 5, bottom = 5 }
+			})
+			
 			FWHSBackground:SetBackdropColor(unpack(FW.Settings.HealthstoneBgColor));
 			FWHSBackground:SetBackdropBorderColor(unpack(FW.Settings.HealthstoneBgColor));
 

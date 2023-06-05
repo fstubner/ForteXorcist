@@ -222,10 +222,5 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 			<StatusBar name="FWHSBar5" inherits="FWHSBarTemplate"/>
 			<StatusBar name="FWHSBar6" inherits="FWHSBarTemplate"/>
 		</Frames>
-		<Backdrop bgFile="Interface\AddOns\Forte_Core\Textures\Background" edgeFile="Interface\AddOns\Forte_Core\Textures\Border" tile="true">
-			<EdgeSize><AbsValue val="5"/></EdgeSize>
-			<TileSize><AbsValue val="5"/></TileSize>
-			<BackgroundInsets><AbsInset left="5" right="5" top="5" bottom="5"/></BackgroundInsets>
-		</Backdrop>
 	</Frame>
 </Ui>
