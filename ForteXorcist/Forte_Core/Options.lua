@@ -1184,7 +1184,7 @@ local function NewButton(parent)
 end
 
 local function NewDropdownShowButton(parent,dropdown)
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	obj.parent = parent;
 	obj.dropdown = dropdown;
 	
@@ -1322,7 +1322,7 @@ local function NewDropdownListButton(parent)
 end
 
 local function NewOptionsHeader(parent)
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	obj.texture = obj:CreateTexture(nil,"BACKGROUND");
 	obj.texture:SetPoint("TOPLEFT",obj,"TOPLEFT",1,-1);
 	obj.texture:SetPoint("BOTTOMRIGHT",obj,"BOTTOMRIGHT",-1,1);
@@ -1436,7 +1436,7 @@ local function NewDefaultAllButton(parent)
 end
 
 local function NewEditBox(parent)
-	local obj = CreateFrame("EditBox",nil,parent);
+	local obj = CreateFrame("EditBox",nil,parent,"BackdropTemplate");
 	obj.parent = parent;
 	obj:SetWidth(100);
 	obj:SetHeight(14);
@@ -1496,7 +1496,7 @@ local function NewEditBox(parent)
 end
 
 local function NewTextureButton(parent,n)
-	local obj = CreateFrame("Button",nil,parent);
+	local obj = CreateFrame("Button",nil,parent,"BackdropTemplate");
 	obj.parent = parent;
 	obj.parent.items[n] = obj;
 	obj:SetWidth(140);
@@ -1772,7 +1772,7 @@ local function ClickOption(obj,button)
 end
 
 local function NewLinker(parent)
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	obj.parent = parent;
 	obj:SetAllPoints(obj.parent);
 	obj:EnableMouse(false);
@@ -1847,7 +1847,7 @@ end
 
 
 local function NewButtonOption(parent,o,s,d)
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	obj.o = o;
 	obj.s = s or FW.Settings;
 	obj.d = d or FW.Default;
@@ -2346,7 +2346,7 @@ end
 end]]
 
 local function NewTabFrame(parent)
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent, "BackdropTemplate");
 	local rightspace = 0;
 	obj.parent = parent;
 	obj.edit = false;
@@ -2456,7 +2456,7 @@ local function NewTabFrame(parent)
 end
 
 local function NewOptionsFrame(parent)
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent, "BackdropTemplate");
 	obj.parent = parent;
 	obj.normalheader = NewOptionsHeader(obj);
 	obj.frameheader = CreateFrame("Frame",nil,obj);
@@ -2737,7 +2737,7 @@ local function NewOptionsFrame(parent)
 end
 
 local function NewSubOptionsFrame(parent)
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	--obj.expand = false;
 	obj.tip = "";
 	obj.title = "";
@@ -2862,7 +2862,7 @@ local function NewSubOptionsFrame(parent)
 end
 
 local function NewInfoOption(parent,o,s,d)
-	local obj = CreateFrame("Frame",nil,parent); -- dont use NewOption function for this one
+	local obj = CreateFrame("Frame",nil,parent,"BackdropTemplate"); -- dont use NewOption function for this one
 	obj.o = o;
 	obj.s = s or FW.Settings;
 	obj.d = d or FW.Default;
@@ -3025,7 +3025,7 @@ local function NewColorOption(parent,o,s,d)
 end
 
 local function NewFilterListItem(parent,n)
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	obj.parent = parent;
 	obj.parent.items[n] = obj;
 	
@@ -3603,7 +3603,7 @@ local function NewMessage2Option(parent,o,s,d)
 end
 
 local function NewLinkOption(parent,o,s,d)
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	obj.o = o;
 	obj.parent = parent;
 	obj.default = NewDefaultButton(obj);
@@ -4078,7 +4078,7 @@ local function NewScrollFrame(parent)
 end
 
 local function NewImageOption(parent,o,s,d)
-	local obj = CreateFrame("Frame",nil,parent);
+	local obj = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	obj.parent = parent;
 	
 	obj.image = obj:CreateTexture(nil,"ARTWORK");
@@ -4469,7 +4469,7 @@ if LSM then
 end
 
 function FW:NewOptionsPanel()
-	local obj = CreateFrame("Frame",nil,UIParent);
+	local obj = CreateFrame("Frame",nil,UIParent, "BackdropTemplate");
 	OptionsPanel = obj;
 	
 	obj.parent = UIParent;
@@ -4849,7 +4849,7 @@ function FW:NewOptionsPanel()
 			if tab_actions ~= nil then -- has tabs enabled!
 				if not main_data.tabs then
 					main_data.tabs = {};
-					main_data.tabs_frame = CreateFrame("Frame",nil,self.scrollframe.content);
+					main_data.tabs_frame = CreateFrame("Frame",nil,self.scrollframe.content, "BackdropTemplate");
 					main_data.tabs_frame.parent = main_data;
 				end
 				main_data.tabs_frame:SetWidth(width);

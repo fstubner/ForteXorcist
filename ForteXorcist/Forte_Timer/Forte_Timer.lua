@@ -1628,7 +1628,7 @@ local function NewTick(parent,n)
 end
 
 local function NewStatusBar(parent)
-	local bar = CreateFrame("Frame",nil,parent);
+	local bar = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	bar.parent = parent;
 	bar.texture = bar:CreateTexture(nil,"ARTWORK");
 	--bar.texture:SetPoint("TOPLEFT", bar, "TOPLEFT", 0, 0);
@@ -1948,7 +1948,7 @@ local function NewGroup(parent,n)
 end
 
 local function ST_NewTimerFrame(index,root)
-	local frame = CreateFrame("Frame",nil,UIParent);
+	local frame = CreateFrame("Frame",nil,UIParent,"BackdropTemplate");
 	frame.parent = UIParent;
 	frame.index = index;
 	frame.root = root;

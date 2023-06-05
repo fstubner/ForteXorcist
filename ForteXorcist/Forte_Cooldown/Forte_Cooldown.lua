@@ -961,7 +961,7 @@ end
 
 local function NewIcon(parent,n)
 	local icon;
-	parent.icons[n] = CreateFrame("Frame",nil,parent);
+	parent.icons[n] = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	icon = parent.icons[n];
 	icon.parent = parent;
 	icon:SetPoint("CENTER",parent,"CENTER",0,0);
@@ -989,7 +989,7 @@ local function NewIcon(parent,n)
 end
 
 local function CD_NewSplashFrame(index)
-	local frame = CreateFrame("Frame",nil,UIParent);
+	local frame = CreateFrame("Frame",nil,UIParent,"BackdropTemplate");
 	frame.parent = UIParent;
 	frame.index = index;
 	frame.icons = {};
@@ -1076,7 +1076,7 @@ end
 
 local function NewBar(parent,n)
 	local bar;
-	parent.bars[n] = CreateFrame("Frame",nil,parent);
+	parent.bars[n] = CreateFrame("Frame",nil,parent,"BackdropTemplate");
 	bar = parent.bars[n];
 	bar.parent = parent;
 	
@@ -1211,7 +1211,7 @@ local function CD_NewCooldownFrame(index)
 	frame.bars = {};
 	frame.tags = {};
 	
-	frame.tagsframe = CreateFrame("Frame",nil,frame);
+	frame.tagsframe = CreateFrame("Frame",nil,frame,"BackdropTemplate");
 	frame.tagsframe:SetAllPoints(frame);
 	
 	frame:SetPoint("CENTER",UIParent,"CENTER");	
