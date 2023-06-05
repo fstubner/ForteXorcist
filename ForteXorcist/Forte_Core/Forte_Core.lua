@@ -577,7 +577,7 @@ function FW:RegisterSound(path,name)
 end
 
 function FW:SetDefaultFont(path,size)
-	FW.Default.Font = {path,size};
+	FW.Default.Font = {path, size, ""};
 	 -- setting the options default font here makes more sense
 	FW.Default.OptionsFont = FW.Default.Font;
 	FW.Default.OptionsHeaderFont = {};
