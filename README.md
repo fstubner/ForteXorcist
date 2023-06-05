@@ -1,5 +1,5 @@
 # ForteXorcist
-This is an attempt at restoring functionality to the ForteXorcist addon that is no longer being maintained as illustrated below:
+This is an attempt at restoring functionality to the ForteXorcist addon that is no longer being maintained as illustrated by the `Release Date` of previous updates in the table below:
 
 | Description                       | Version    | Release Date        | Download Link                                                                                 |
 |-----------------------------------|------------|---------------------|-----------------------------------------------------------------------------------------------|
