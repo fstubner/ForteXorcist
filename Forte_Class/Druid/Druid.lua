@@ -19,18 +19,15 @@ if FW.CLASS == "DRUID" then
 	-- Note that the Cyclone timer is always going to be inaccurate past the first cast
 	
 	-- Register ID renames first!
-	FW:SetCustomName(50334,FWL.BERSERK_FERAL);
-	FW:SetCustomName(16979,FWL.FERAL_CHARGE_BEAR);
-	FW:SetCustomName(49376,FWL.FERAL_CHARGE_CAT);
+	FW:SetCustomName(106952,FWL.BERSERK_FERAL);
 	
-	FW:SetCustomName(33878,FWL.MANGLE_BEAR);
-	FW:SetCustomName(33876,FWL.MANGLE_CAT);
+	FW:SetCustomName(33917,FWL.MANGLE_BEAR);
 	
-	FW:SetCustomName(80964,FWL.SKULL_BASH_BEAR);
-	FW:SetCustomName(80965,FWL.SKULL_BASH_CAT);
+	FW:SetCustomName(106839,FWL.SKULL_BASH_BEAR);
+	FW:SetCustomName(106839,FWL.SKULL_BASH_CAT);
 	
-	FW:SetCustomName(779,FWL.SWIPE_BEAR);
-	FW:SetCustomName(62078,FWL.SWIPE_CAT);
+	FW:SetCustomName(106785,FWL.SWIPE_BEAR);
+	FW:SetCustomName(106785,FWL.SWIPE_CAT);
 	
 	FW:RegisterSet("Thunderheart Regalia",31043,31035,31040,31046,31049,34572,34446,34555);
 	FW:RegisterSet("Nordrassil Raiment",30216,30217,30219,30220,30220);	
@@ -42,28 +39,26 @@ if FW.CLASS == "DRUID" then
 		-- id/name, hastarget, tickspeed
 		ST:AddChannel( 16914, 0, 1); -- Hurricane
 		ST:AddChannel(127663, 0, 1); -- Astral Communion
-		ST:AddChannel(106996, 0, 1); -- Astral Storm
-		ST:AddChannel(740, 0, 2); -- Astral Storm
 		
 		-- Balance Spells
 		ST:SetDefaultHasted(1)
 		:AddSpell(33786, 000,"Crowd",	F.UNIQUE) -- Cyclone
-		:AddSpell(19975,  30,"Crowd",	F.UNIQUE):SetDurationPVP(12) -- Entangling Roots
-		:AddSpell( 2637,  40,"Crowd",	F.UNIQUE):SetDurationPVP(12) -- Hibernate
+		:AddSpell(339,  30,"Crowd",	F.UNIQUE):SetDurationPVP(12) -- Entangling Roots
 		:AddSpell(  770, 300,"Default") -- Faerie Fire
-		:AddSpell(102355, 300,"Default") -- Faerie Swarm
+		:AddSpell(106707, 300,"Default") -- Faerie Swarm
 		:AddSpell(33831,  15,"Pet",		F.SUMMON) -- Force of Nature
-		:AddSpell( 5570,  12,"Default",	F.TICKS):SetTickSpeed(2) -- Insect Swarm
 		:AddSpell( 8921,  12,"Default",	F.TICKS):SetTickSpeed(2):SetSpellModSetB("Thunderheart Regalia",2,3) -- Moonfire
-		:AddSpell(93402,  12,"Default",	F.TICKS):SetTickSpeed(2) -- Sunfire
+		:AddSpell(164815,  12,"Default",	F.TICKS):SetTickSpeed(2) -- Sunfire
 		
 		-- Resto Spells
-		:AddSpell(29166,  10,"Buff",	F.BUFF) -- Innervate
-		:AddSpell(33763,   7,"Heal",	F.HOT):SetTickSpeed(1):SetStacks(3) -- Lifebloom
-		:AddSpell( 8936,   6,"Heal",	F.HOT):SetTickSpeed(2):SetSpellModSetB("Nordrassil Raiment",2,6) -- Regrowth
-		:AddSpell(  774,  12,"Heal",	F.HOT) -- Rejuvenation
+		:AddSpell(102342,  12,"Buff",	F.BUFF) -- Ironbark
+		:AddSpell(33763,  15,"Heal",	F.HOT):SetTickSpeed(1) -- Lifebloom
+		:AddSpell( 8936,  12,"Heal",	F.HOT):SetTickSpeed(2):SetSpellModSetB("Nordrassil Raiment",2,6) -- Regrowth
+		:AddSpell(  774,  18,"Heal",	F.HOT) -- Rejuvenation
+		:AddSpell(155675,  18,"Heal",	F.HOT) -- Germination
 		:AddSpell(48503,  15,"Heal",	F.BUFF) -- Living Seed
 		:AddSpell(48438,   7,"Heal",	F.HOT):SetTickSpeed(1) -- Wild Growth
+		:AddSpell(145205,  30,"Pet",	F.SUMMON) -- Wild Mushroom
 
 		-- Feral Spells
 		:SetDefaultHasted(0)
@@ -115,7 +110,7 @@ if FW.CLASS == "DRUID" then
 		:AddBuff(22842) -- Frenzied Regeneration
 		:AddBuff(5217) -- Tiger's Fury
 		:AddBuff(37316) -- Nurture 2 piece Feral T5
-		:AddBuff(50334) -- Berserk
+		:AddBuff(106952) -- Berserk
 		:AddBuff(61336) -- Survival Instincts
 		:AddBuff(106922) -- Might of Ursoc
 		:AddBuff(77761) -- Stampeding Roar
@@ -124,6 +119,7 @@ if FW.CLASS == "DRUID" then
 
 		-- Resto Buffs
 		:AddBuff(16870) -- Clearcasting
+		:AddBuff(77495) -- Harmony
 
 		-- Feral Procs/Trinkets
 		:AddBuff(43738) -- Primal Instinct, Idol of Terror
