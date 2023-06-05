@@ -2311,11 +2311,11 @@ FW:RegisterVariablesEvent(function()
 	--FW:RegisterToEvent("INSPECT_TALENT_READY",		function() FW_MakeSpeccInfo(1); end);
 	FW:RegisterToEvent("CHAT_MSG_ADDON",			FW_AddonMessageReceived);
 	
-	if not IsAddonMessagePrefixRegistered("FX2") then
-		RegisterAddonMessagePrefix("FX2");
+	if not C_ChatInfo.IsAddonMessagePrefixRegistered("FX2") then
+		C_ChatInfo.RegisterAddonMessagePrefix("FX2");
 	end
-	if not IsAddonMessagePrefixRegistered("oRA3") then
-		RegisterAddonMessagePrefix("oRA3");
+	if not C_ChatInfo.IsAddonMessagePrefixRegistered("oRA3") then
+		C_ChatInfo.RegisterAddonMessagePrefix("oRA3");
 	end
 	
 	FW:RegisterToEvent("UNIT_PET", function(event,arg1) if arg1 == "player" then FW:Changed("pet");end end);
