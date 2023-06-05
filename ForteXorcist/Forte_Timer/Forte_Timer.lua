@@ -1957,10 +1957,15 @@ local function ST_NewTimerFrame(index,root)
 	frame:SetPoint("CENTER",UIParent,"CENTER");	
 	frame:SetHeight(20);
 	
-	frame.header = CreateFrame("Frame",nil,frame);
+	frame.header = CreateFrame("Frame",nil,frame, "BackdropTemplate"); -- Added "BackdropTemplate"
 	frame.header:SetAllPoints(frame);
 	frame.header.title = frame.header:CreateFontString(nil,"ARTWORK","GameFontHighlightSmall");
 	frame.header.title:SetAllPoints(frame);
+	
+	-- Create a backdrop frame for the header if it doesn't exist
+	-- if not frame.header.backdrop then 
+	-- 	frame.header.backdrop = CreateFrame("Frame", nil, frame.header, "BackdropTemplate");
+	-- end
 	
 	--scripts
 	frame:SetScript("OnMouseDown",function(self,button)
