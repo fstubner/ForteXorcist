@@ -2284,7 +2284,7 @@ FW:RegisterToEvent("VARIABLES_LOADED",FW_Variables);
 FW:RegisterDelayedLoadEvent(FW_Scan);
 FW:RegisterDelayedLoadEvent(FW_RelevantSetBonus);
 FW:RegisterDelayedLoadEvent(FW_RelevantTalent);
-FW:RegisterDelayedLoadEvent(FW_RelevantGlyph);
+--FW:RegisterDelayedLoadEvent(FW_RelevantGlyph);
 FW:RegisterDelayedLoadEvent(FW_RelevantStance);
 FW:RegisterDelayedLoadEvent(FW_TimedRaidParty);
 FW:RegisterDelayedLoadEvent(FW_PartyRaid);
