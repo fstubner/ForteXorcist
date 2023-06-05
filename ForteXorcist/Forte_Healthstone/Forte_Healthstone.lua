@@ -248,7 +248,7 @@ function FW:HSFrame_OnClick(button)
 	else
 		FW:ScrollTo(FWL.HEALTHSTONE_SPY);
 	end
-	PlaySound("igMainMenuOptionCheckBoxOn");
+	PlaySound(856); --igMainMenuOptionCheckBoxOn
 end
 
 function FW:HealthstoneCheck() -- clicked from ui (and time-based)

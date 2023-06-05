@@ -897,7 +897,7 @@ local function Splash_OnClick(button)
 	if button == "RightButton" then
 		FW:ScrollTo(FWL.SECONDARY_SPLASH);
 	end
-	PlaySound("igMainMenuOptionCheckBoxOn");
+	PlaySound(856); --igMainMenuOptionCheckBoxOn
 end
 
 local function Frame_OnClick(button)
@@ -905,7 +905,7 @@ local function Frame_OnClick(button)
 	if button == "RightButton" then
 		FW:ScrollTo(FWL.COOLDOWN_TIMER);
 	end
-	PlaySound("igMainMenuOptionCheckBoxOn");
+	PlaySound(856); --igMainMenuOptionCheckBoxOn
 end
 
 local function CD_ShowTimeFor(id)

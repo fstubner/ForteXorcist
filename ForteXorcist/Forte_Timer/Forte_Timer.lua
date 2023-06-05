@@ -1972,7 +1972,7 @@ local function ST_NewTimerFrame(index,root)
 		if button == "RightButton" then
 			FW:ScrollTo(FWL.SPELL_TIMER,nil,frame.index);
 		end
-		PlaySound("igMainMenuOptionCheckBoxOn");
+		PlaySound(856); --igMainMenuOptionCheckBoxOn
 	end);
 
 	--functions
