@@ -1,4 +1,4 @@
-﻿--ForteXorcist v1.976.1 by Xus 21-06-2012 for 4.3.0
+﻿--ForteXorcist v1.980.8 by Xus 28-09-2012 for 5.0
 
 --[[
 "frFR": French
@@ -18,9 +18,6 @@
 
 if FW.CLASS == "WARLOCK" then
 	local FWL = FW.L;
-	
-	FWL.DARK_INTENT = GetSpellInfo(85768);
-	FWL.DARK_INTENT_BUFF = FWL.DARK_INTENT..FWL._BUFF;
 	
 	-- THESE ARE INTERFACE STRINGS ONLY AND TRANSLATING THEM IS OPTIONAL
 

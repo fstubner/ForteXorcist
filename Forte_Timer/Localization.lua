@@ -1,4 +1,4 @@
-﻿--ForteXorcist v1.976.1 by Xus 21-06-2012 for 4.3.0
+﻿--ForteXorcist v1.980.8 by Xus 28-09-2012 for 5.0
 
 --[[
 "frFR": French
@@ -18,7 +18,7 @@
 --[[>> still needs translating]]
 local FWL = FW.L;
 
-FWL.CLEARCASTING = FW:SpellName(12536);
+--FWL.CLEARCASTING = FW:SpellName(12536);
 --FWL.SUMMON_VALKYR = "Val'kyr Guardian"; -- uncomment to change the name of the val'kyr bars
 
 -- THESE ARE INTERFACE STRINGS ONLY AND TRANSLATING THEM IS OPTIONAL

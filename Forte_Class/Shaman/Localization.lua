@@ -1,4 +1,4 @@
-﻿--ForteXorcist v1.976.1 by Xus 21-06-2012 for 4.3.0
+﻿--ForteXorcist v1.980.8 by Xus 28-09-2012 for 5.0
 
 --[[
 "frFR": French
@@ -17,9 +17,7 @@
 if FW.CLASS == "SHAMAN" then
 --[[>> still needs translating]]
 	local FWL = FW.L;
-	FWL.ENERGIZED = GetSpellInfo(71220);
-	FWL.ENERGIZED_RELIC = FWL.ENERGIZED..FWL._RELIC;
-	
+
 	-- THESE ARE INTERFACE STRINGS ONLY AND TRANSLATING THEM IS OPTIONAL
 	
 	-- French

@@ -1,4 +1,4 @@
-ForteXorcist v1.976.1 by Xus 21-06-2012 for 4.3.0
+ForteXorcist v1.980.8 by Xus 28-09-2012 for 5.0
 
 Check http://www.wowinterface.com/portal.php?&uid=65900 for detailed info and the latest version.
 
