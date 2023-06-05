@@ -56,28 +56,28 @@ function CA:SetGCDStance(requires_stace, new_gcd)
 end
 local hastebuffs = {
 	["ALL"] = {
-		[FW:SpellName(32182)] = 1.30, -- heroism
-		[FW:SpellName(2825)] = 1.30, -- bloodlust
-		[FW:SpellName(80353)] = 1.30, -- Time warp
-		--[FW:SpellName(68933)] = 2.00, -- wrath of air totem
-		[FW:SpellName(49868)] = 1.05, -- Mind Quikening
-		[FW:SpellName(10060)] = 1.20, -- power infusion
-		[FW:SpellName(63277)] = 2.00, -- shadow crash
+		[32182] = 1.30, -- heroism
+		[2825] = 1.30, -- bloodlust
+		[80353] = 1.30, -- Time warp
+		--[68933] = 2.00, -- wrath of air totem
+		[49868] = 1.05, -- Mind Quikening
+		[10060] = 1.20, -- power infusion
+		[63277] = 2.00, -- shadow crash
 	},
 	["PRIEST"] = {
-		[FW:SpellName(59889)] = 1.15, -- Borrowed Time
+		[59889] = 1.15, -- Borrowed Time
 	},
 	["WARLOCK"] = {
 		
 	},
 	["DRUID"] = {
-		[FW:SpellName(16886)] = 1.15, -- Nature's Grace
+		[16886] = 1.15, -- Nature's Grace
 	},
 	["SHAMAN"] = {
-		[FW:SpellName(16166)] = 1.20, -- Elemental Mastery
+		[16166] = 1.20, -- Elemental Mastery
 	},
 	["Troll"] = {
-		[FW:SpellName(26297)] = 1.20, -- berserking
+		[26297] = 1.20, -- berserking
 	},
 	-- Improved Moonkin Form, Swift Retribution
 }
